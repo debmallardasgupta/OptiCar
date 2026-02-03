@@ -31,7 +31,7 @@ While the foundational ideas were motivated by the coursework, the problem selec
 - Matplotlib, Seaborn
 
 
-## 🧪 Dataset
+## Dataset
 
 - **Source:** Pre-owned car listings  
 - **Key Features:**
