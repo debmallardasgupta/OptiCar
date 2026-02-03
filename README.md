@@ -1,9 +1,13 @@
 # Used Car Price Prediction 🚗💰
 
 ## Overview
-This project builds an end-to-end machine learning pipeline to predict the prices of pre-owned cars using real-world data. The workflow includes data cleaning, feature engineering, exploratory data analysis, and regression modeling.
 
-The project compares baseline performance with Linear Regression and Random Forest models to evaluate improvements gained through feature engineering and non-linear modeling.
+This project builds an end-to-end machine learning pipeline to predict the prices of pre-owned cars using real-world data. The workflow includes data cleaning, feature engineering, exploratory data analysis (EDA), and regression modeling.
+
+The project compares baseline performance with Linear Regression and Random Forest models to evaluate improvements achieved through feature engineering and non-linear modeling techniques.
+
+This project was developed as a final-week inspired project based on concepts learned from the NPTEL course **“Python for Data Science.”**  
+While the foundational ideas were motivated by the coursework, the problem selection, feature engineering, modeling approach, and overall project structure were independently designed and implemented as a complete, end-to-end machine learning pipeline.
 
 
 ## Dataset
@@ -103,9 +107,11 @@ These can be directly loaded for inference or deployment.
 
 ---
 
-## How to Run the Project
+## How To Run This Project
+## 🔽 Clone This Repository
 
-### Clone the repository
+Open **Git Bash** (or Terminal) and run:
 
-git clone https://github.com/your-username/used-car-prediction.git
+```bash
+git clone https://github.com/<your-username>/used-car-prediction.git
 cd used-car-prediction
