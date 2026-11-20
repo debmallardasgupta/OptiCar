@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - run: pip install -e ".[dev]"
+      - run: pytest -q
+      - name: CLI smoke test
+        run: |
+          opticar train --no-plots --cv 2 --model-path /tmp/m.joblib --reports-dir /tmp/r
+          opticar predict --model-path /tmp/m.joblib --brand volkswagen --model golf --age 8 --power 105 --km 90000

@@ -1,15 +1,17 @@
 # Python
 __pycache__/
 *.pyc
+*.egg-info/
+build/
+dist/
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Data
-data/raw/*.csv
-!data/raw/cars_sampled.csv
+# Test / tooling
+.pytest_cache/
 
-# Models
+# Legacy model format (the current artifact, models/opticar.joblib, IS committed)
 models/*.pkl
 
 # OS
